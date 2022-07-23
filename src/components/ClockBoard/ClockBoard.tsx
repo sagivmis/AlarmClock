@@ -120,8 +120,8 @@ const ClockBoard = (props: IClockBoard) => {
                             label='Sound'
                         >
                             <MenuItem value={0}>Classic Alarm</MenuItem>
-                            <MenuItem value={1}>N\A</MenuItem>
-                            <MenuItem value={2}>N\A</MenuItem>
+                            <MenuItem value={1} disabled>N\A</MenuItem>
+                            <MenuItem value={2} disabled>N\A</MenuItem>
                         </Select>
                         <Button variant='outlined' className="approve-clock-btn" onClick={approveClock}>ADD</Button>
                         {/* </div> */}
