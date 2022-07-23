@@ -1,0 +1,103 @@
+.clockboard {
+  width: 70%;
+  height: calc(80% - 20px);
+  background-color: aliceblue;
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  overflow: auto;
+}
+button.MuiButtonBase-root[aria-label="clockboard"] {
+  border-radius: 5px;
+  width: fit-content;
+  padding: unset;
+}
+button.MuiButtonBase-root[aria-label="clockboard"]:hover {
+  border-radius: 5px;
+}
+
+button.add-clock-btn {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+h2#modal-title {
+  text-align: center;
+}
+
+.new-time-input {
+  /* margin-top: 100px; */
+  display: flex;
+  /* width: 180px; */
+  gap: 25px;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.add-clock-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+div.select-sound {
+  /* margin-top: 10px; */
+}
+
+.sound-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+button.approve-clock-btn {
+  color: #282c34;
+  border-color: #282c34;
+}
+button.approve-clock-btn:hover {
+  color: #282c34;
+  border-color: #282c34;
+}
+
+.error-message-modal {
+  /* position: absolute; */
+  /* bottom: -7px; */
+  /* transform: translate(-50%, -50%); */
+  /* width: 100%; */
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: red;
+}
+
+.awoke {
+  transition: all 1s ease;
+  background-color: #545d6e;
+}
+
+button.reset-awoke {
+  position: absolute;
+  right: 8%;
+}
+
+svg.reset-awoke:hover {
+  fill: white;
+  transition: all 0.3s ease;
+}
+
+svg.play-clock-sound:hover {
+  /* filter: brightness(); */
+  transition: all 0.3s ease;
+}
+
+div.user-input-intervals {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 20%;
+}

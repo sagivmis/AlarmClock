@@ -1,0 +1,19 @@
+.current-time {
+  position: absolute;
+  /* width: 60%; */
+  /* left: 15%; */
+  top: 5%;
+  height: 10%;
+  color: white;
+  letter-spacing: 0.6em;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.seconds {
+  position: absolute;
+  top: 30%;
+  display: inline;
+  letter-spacing: 0.2em;
+  font-size: 0.4em;
+}

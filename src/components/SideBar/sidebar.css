@@ -1,0 +1,37 @@
+.sidebar {
+  width: calc(19%);
+  height: 20%;
+  position: absolute;
+  right: 2%;
+  bottom: calc(62%);
+  background-color: aliceblue;
+  border-radius: 5px;
+  /* padding: 10px; */
+}
+
+.sidebar-closed {
+  position: absolute;
+  right: 2%;
+  bottom: 79.8%;
+  height: 10%;
+  width: 19%;
+}
+
+.close-sidebar {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+
+button.MuiButtonBase-root[aria-label="show-panel"] {
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 5px;
+  height: 40px;
+}
+button.MuiButtonBase-root[aria-label="show-panel"]:hover {
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 5px;
+  height: 40px;
+}
