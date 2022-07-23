@@ -99,3 +99,22 @@ button.MuiButtonBase-root[aria-label="user-intervals"]:hover {
   border-radius: 5px;
   background-color: transparent;
 }
+
+.playing {
+  /* background-color: #d65548; */
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #d65548;
+  }
+  90% {
+    background-color: white;
+  }
+  100% {
+    background-color: #d65548;
+  }
+}

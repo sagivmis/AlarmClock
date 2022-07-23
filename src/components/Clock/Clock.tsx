@@ -37,6 +37,8 @@ const Clock = (props: IClock) => {
     const [error, setError] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
     const [awoke, setAwoke] = useState(false);
+    const [minuteInterval, setMinuteInterval] = useState(0);
+    const [amountInterval, setAmountInterval] = useState(0);
 
     const { flushHeldKeys } = useKeyboardShortcut(
         ["ArrowUp"],
@@ -201,8 +203,6 @@ const Clock = (props: IClock) => {
     const displayHours = hour === 0 ? '00' : hour && hour < 10 ? `0${hour}` : `${hour}`
     const displayMinutes = minute === 0 ? '00' : minute && minute < 10 ? `0${minute}` : `${minute}`
 
-    const [minuteInterval, setMinuteInterval] = useState(0);
-    const [amountInterval, setAmountInterval] = useState(0);
     const handleMinuteIntervalChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const inputMinute = parseInt(e.target.value);
         if (inputMinute >= 0 && inputMinute <= 60)
@@ -215,7 +215,7 @@ const Clock = (props: IClock) => {
             setAmountInterval(inputAmount)
     }
     return (
-        <div className={`clock ${selected ? "selected" : ""} ${awoke ? "awoke" : ""}`} onClick={() => setSelectedClock(clock.id)}>
+        <div className={`clock ${selected ? "selected" : ""} ${awoke ? "awoke" : ""} ${playing ? "playing" : ""}`} onClick={() => setSelectedClock(clock.id)}>
             <IconButton aria-label="clock" className='delete-clock' onClick={removeClock}>
                 <HighlightOffOutlinedIcon className="delete-clock" />
             </IconButton>
