@@ -3,6 +3,7 @@ import ClockBoard from '../ClockBoard';
 import './App.css';
 import SideBar from '../SideBar';
 import CurrentTime from '../CurrentTime';
+import AdsController from '../AdsController/AdsController';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <CurrentTime />
       <ClockBoard />
       {/* <SideBar open={false} /> */}
+      <AdsController />
     </div>
   );
 }

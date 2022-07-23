@@ -10,3 +10,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.ads-controller {
+  position: absolute;
+  right: 0;
+}
