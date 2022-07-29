@@ -4,7 +4,6 @@
   background-color: white;
   min-height: 1.5em;
   position: relative;
-  /* left: 5%; */
   border: 0.05em black solid;
   border-radius: 5px;
 
@@ -105,6 +104,29 @@ button.MuiButtonBase-root[aria-label="user-intervals"]:hover {
   animation-name: blink;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+
+div.toggle-stack {
+  position: absolute;
+  right: 3%;
+}
+
+button.toggle-btn {
+  background-color: #282c34;
+}
+
+button.toggle-btn:hover {
+  background-color: #545d6e;
+  /* filter: brightness(1.5); */
+}
+
+button.toggle-btn.toggled {
+  background-color: #b6bcc7;
+}
+
+svg[aria-label="form-control-icon"] {
+  width: 15px;
+  cursor: pointer;
 }
 
 @keyframes blink {
