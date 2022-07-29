@@ -88,6 +88,7 @@ const ClockBoard = (props: IClockBoard) => {
         setClockboard(prev => [...prev, newClock])
         setOpen(false)
     }
+
     return (
         <div className='clockboard'>
             <IconButton aria-label="clockboard" onClick={addClock} className='add-clock-btn'>
@@ -109,8 +110,6 @@ const ClockBoard = (props: IClockBoard) => {
                             <TextField error={hour || hour === 0 ? hour > 24 || hour < 0 : true} onChange={handleHourChange} value={displayHours} label="Hour" variant="outlined" className='hours-input' inputProps={{ maxLength: 3 }} />
                             <TextField error={minute || minute === 0 ? minute > 60 || minute < 0 : true} onChange={handleMinuteChange} value={displayMinutes} label="Minute" variant="outlined" className='minute-input' inputProps={{ maxLength: 3 }} />
                         </div>
-                        {/* <div className='sound-container'> */}
-                        {/* <Typography sx={{ width: '30%' }}>Sound</Typography> */}
                         <Select
                             labelId="select-label"
                             id="select-sound"
@@ -124,7 +123,6 @@ const ClockBoard = (props: IClockBoard) => {
                             <MenuItem value={2} disabled>N\A</MenuItem>
                         </Select>
                         <Button variant='outlined' className="approve-clock-btn" onClick={approveClock}>ADD</Button>
-                        {/* </div> */}
                     </FormControl>
                     {error && <div className='error-message-modal'>{errorMessage}</div>}
                 </Box>
